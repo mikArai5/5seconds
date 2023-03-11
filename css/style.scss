@@ -1,0 +1,47 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+#seconds5 {
+    // ページ共通
+    .inner {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    // kvエリア
+    .kv {
+        background-image: url("/images/kv_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 880px;
+        h2 {
+            text-align: center;
+        }
+        &__images {
+            position: relative;
+            height: 880px;
+        }
+        &__image {
+            position: absolute;
+            &--01 {
+                top: 0%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &--02 {
+                top: 24%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &--03 {
+                top: 67%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
