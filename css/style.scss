@@ -1,6 +1,18 @@
 @charset "UTF-8";
-
-.inner {
-    max-width: 900px;
-    margin: 0 auto;
+// リセットCSS
+* {
+    margin: 0;
+    padding: 0;
+}
+#seconds5 {
+    // ページ共通
+    .inner {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    // kvエリア
+    .kv {
+        background-color: pink;
+        text-align: center;
+    }
 }

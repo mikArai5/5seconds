@@ -1,5 +1,15 @@
-.inner {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#seconds5 .inner {
   max-width: 900px;
   margin: 0 auto;
+}
+
+#seconds5 .kv {
+  background-color: pink;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
