@@ -15,8 +15,9 @@ img {
 #seconds5 .kv {
   background-image: url("/images/kv_bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 880px;
+  overflow: hidden;
 }
 
 #seconds5 .kv h2 {
@@ -52,5 +53,114 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#seconds5 .contents {
+  padding-top: 97px;
+  background-image: url("/images/breakScreen_pc.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#seconds5 .contents__inner {
+  width: 820px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#seconds5 .contents__inner .wings01 {
+  position: absolute;
+  top: -28%;
+  right: -11%;
+}
+
+#seconds5 .contents__inner .wings02 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+
+#seconds5 .contents__inner .wings03 {
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+#seconds5 .contents__inner .wings04 {
+  position: absolute;
+  top: 0;
+  right: left;
+}
+
+#seconds5 .contents__inner .titleBottom {
+  position: absolute;
+  bottom: -1%;
+  right: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#seconds5 .contents__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#seconds5 .contents__comment {
+  margin-top: 70px;
+}
+
+#seconds5 .contents__creater {
+  margin-top: 114px;
+}
+
+#seconds5 .contents__scale {
+  margin-bottom: 103px;
+}
+
+#seconds5 .footer {
+  position: fixed;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+#seconds5 .footer .company {
+  margin: 30px 0px 32px;
+}
+
+#seconds5 .footer .sns {
+  margin-bottom: 80px;
+}
+
+#seconds5 .footer .wingBottom {
+  position: absolute;
+  right: 14%;
+  bottom: -30%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

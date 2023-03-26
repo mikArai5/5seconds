@@ -16,8 +16,9 @@ img {
     .kv {
         background-image: url("/images/kv_bg.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: 880px;
+        overflow: hidden;
         h2 {
             text-align: center;
         }
@@ -43,6 +44,83 @@ img {
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+        }
+    }
+    // コンテンツエリア
+    .contents {
+        padding-top: 97px;
+        background-image: url('/images/breakScreen_pc.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        &__inner {
+            width: 820px;
+            margin: 0 auto;
+            position: relative;
+            .wings01 {
+                position: absolute;
+                top: -28%;
+                right: -11%;
+            }
+            .wings02 {
+                position: absolute;
+                bottom: 10%;
+                left: 0;
+            }
+            .wings03 {
+                position: absolute;
+                top: 35%;
+                right: 0;
+            }
+            .wings04 {
+                position: absolute;
+                top: 0;
+                right: left;
+            }
+            .titleBottom {
+                position: absolute;
+                bottom: -1%;
+                right: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__comment {
+            margin-top: 70px;
+        }
+        &__creater {
+            margin-top: 114px;
+        }
+        &__scale {
+            margin-bottom: 103px;
+        }
+    }
+    // フッター
+    .footer {
+        position: fixed;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        .company {
+            margin: 30px 0px 32px;
+        }
+        .sns {
+            margin-bottom: 80px;
+        }
+        .wingBottom {
+            position: absolute;
+            right: 14%;
+            bottom: -30%;
+            overflow: hidden;
         }
     }
 }
