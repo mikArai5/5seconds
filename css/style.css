@@ -17,11 +17,21 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   height: 880px;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 #seconds5 .kv h2 {
   text-align: center;
+}
+
+#seconds5 .kv .active {
+  position: fixed;
+  top: 0;
+}
+
+#seconds5 .kv .block {
+  display: block;
 }
 
 #seconds5 .kv__images {

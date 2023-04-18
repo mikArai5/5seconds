@@ -1,16 +1,23 @@
-// パララックス
+const parallax = document.querySelectorAll(".para");
+const section = document.querySelectorAll(".kv__images");
 
-//ES6 import
-import simpleParallax from 'simple-parallax-js';
+parallax[0].classList.add('block');
 
-//CommonJS
-const simpleParallax = require('simple-parallax-js');
+document.addEventListener("scroll", function () {
+  for (let i = 0; i < section.length; i++) {
+    
+    const getElementDistanceTop = section[i].getBoundingClientRect().top;
+    
+    const getElementDistanceBottom = section[i].getBoundingClientRect().bottom;
 
-const image = document.getElementsByClassName('kv__image--03');
-new simpleParallax(image,{
-    operation: 'up',
-    scale: 1.5,
-    delay: 2,
-    transition: 'cubic-bezier(0,0,0,.1)',
-    maxTransition: 40
+    if (getElementDistanceTop < window.innerHeight) {
+      parallax[i].classList.add('block');
+    }
+    
+    if (getElementDistanceTop < 0 && getElementDistanceBottom > 0) {
+      parallax[i].classList.add("active");
+    } else { 
+      parallax[i].classList.remove("active");
+    }
+  }
 });

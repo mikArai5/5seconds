@@ -18,9 +18,17 @@ img {
         background-repeat: no-repeat;
         background-size: contain;
         height: 880px;
+        min-height: 100vh; 
         overflow: hidden;
         h2 {
             text-align: center;
+        }
+        .active {  
+            position: fixed;
+            top: 0;
+        }
+        .block{
+            display: block;
         }
         &__images {
             position: relative;
